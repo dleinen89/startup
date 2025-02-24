@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vehicle Inspection & Training",
+  title: "StartUp - Vehicle Inspection & Training",
   description: "A comprehensive vehicle inspection application with built-in training guidance for both pre-operation and post-operation checks.",
   keywords: [
     "vehicle inspection",
@@ -25,8 +26,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gray-50">
+      <body className={montserrat.className}>
+        <div className="min-h-screen">
+          <header className="p-4 flex justify-center">
+            <Image
+              src="/assets/StartUp_Logo.png"
+              alt="StartUp Logo"
+              width={150}
+              height={150}
+              className="w-[150px] h-auto"
+              priority
+            />
+          </header>
           {children}
         </div>
       </body>

@@ -3,24 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 243, 244, 246;
+  --foreground-rgb: 6, 20, 12;
+  --background: #e8e8e8;
+  --primary: #1b9c85;
+  --secondary: #06140c;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background: var(--background);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Form element styles */
 input[type="text"],
 input[type="number"],
 textarea {
-  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary;
 }
 
 input[type="radio"] {
-  @apply h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500;
+  @apply h-4 w-4 border-gray-300 text-primary focus:ring-primary;
 }
 
 /* Custom radio button styles */
@@ -58,7 +61,7 @@ button {
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+  @apply outline-none ring-2 ring-primary ring-offset-2;
 }
 
 /* Custom scrollbar for better UX */

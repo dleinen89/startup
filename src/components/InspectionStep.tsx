@@ -28,7 +28,7 @@ export default function InspectionStep({
   onComplete,
 }: InspectionStepProps) {
   const [checklistItems, setChecklistItems] = useState<ChecklistItemData[]>(items);
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const handleItemChange = (index: number, status: {
     isOk: boolean;

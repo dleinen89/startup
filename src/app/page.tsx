@@ -16,45 +16,55 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8">
           <Link
             href="/pre-operation"
-            className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+            className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-200 border-2 border-[#1b9c85] hover:scale-[1.02] cursor-pointer"
           >
             <div className="p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h2 className="text-2xl font-semibold text-[#1b9c85] mb-4">
                 Pre-Operation Inspection
               </h2>
               <p className="text-gray-600 mb-4">
                 Complete a thorough check before operating the vehicle. Includes safety
                 equipment, fluid levels, and mechanical inspections.
               </p>
-              <ul className="text-sm text-gray-500 space-y-2">
+              <ul className="text-sm text-gray-500 space-y-2 mb-6">
                 <li>• Safety & preparation checks</li>
                 <li>• External vehicle inspection</li>
                 <li>• Cabin & controls verification</li>
                 <li>• Under-bonnet checks</li>
                 <li>• Start-up system tests</li>
               </ul>
+              <div className="text-center">
+                <span className="inline-block bg-[#1b9c85] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#158873] transition-colors duration-200">
+                  Start Inspection →
+                </span>
+              </div>
             </div>
           </Link>
 
           <Link
             href="/post-operation"
-            className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
+            className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-200 border-2 border-[#1b9c85] hover:scale-[1.02] cursor-pointer"
           >
             <div className="p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              <h2 className="text-2xl font-semibold text-[#1b9c85] mb-4">
                 Post-Operation Inspection
               </h2>
               <p className="text-gray-600 mb-4">
                 Perform essential checks after vehicle use. Document any issues or
                 changes noticed during operation.
               </p>
-              <ul className="text-sm text-gray-500 space-y-2">
+              <ul className="text-sm text-gray-500 space-y-2 mb-6">
                 <li>• Shutdown observations</li>
                 <li>• Warning light check</li>
                 <li>• New damage assessment</li>
                 <li>• System status review</li>
                 <li>• Critical issue reporting</li>
               </ul>
+              <div className="text-center">
+                <span className="inline-block bg-[#1b9c85] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#158873] transition-colors duration-200">
+                  Start Inspection →
+                </span>
+              </div>
             </div>
           </Link>
         </div>
